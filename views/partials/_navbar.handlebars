@@ -13,7 +13,9 @@
           <a class="nav-link" href="/categorias">Categoria</a>
         </li>
         {{#if user}}
-
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/usuarios/logout">Logout</a>
+          </li>
         {{else}}
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="/usuarios/login">Login</a>
