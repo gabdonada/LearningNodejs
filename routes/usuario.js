@@ -86,7 +86,7 @@ router.post("/login", (req, res, next)=>{
 router.get("/logout", (req,res)=>{
     req.logOut()//passport reconhece sozinho
     req.flash('success_msg', "Deslogado com sucesso")
-    req.redirect("/")
+    res.redirect("/")
 })
 
 module.exports = router
